@@ -1,0 +1,27 @@
+.expandable .more-text {
+  display: none;
+}
+
+.expandable.open .more-text {
+  display: inline;
+}
+
+.expandable.open .dots {
+  display: none;
+}
+
+.read-more-btn {
+  background-color: #446880;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  margin-top: 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+}
+
+.read-more-btn:hover {
+  background-color: #2c4c60;
+}
