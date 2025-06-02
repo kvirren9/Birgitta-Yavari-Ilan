@@ -1,0 +1,17 @@
+@media (max-width: 768px) {
+  .prayer-wrapper {
+    flex-direction: column;
+  }
+
+  .prayer,
+  .prayer-image {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .prayer-image img {
+    height: auto;
+    object-fit: contain;
+    margin-top: 1rem;
+  }
+}
