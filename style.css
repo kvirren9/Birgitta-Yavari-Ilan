@@ -29,6 +29,7 @@ header h1 {
 .hero {
   width: 100%;
   overflow: hidden;
+  margin-top: 0.5rem;
 }
 
 .hero img {
