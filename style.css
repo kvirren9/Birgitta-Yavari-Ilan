@@ -174,3 +174,29 @@ footer {
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
+
+
+.product-item {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.product-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.product-item a {
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  color: #2c3e50;
+  text-decoration: underline;
+}
+
+.product-item a:hover {
+  color: #8e44ad;
+}
+
