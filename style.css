@@ -169,54 +169,59 @@ footer {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-.product-item {
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  padding: 2rem 1rem;
+  justify-items: center;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.product-card {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
   text-align: center;
-  margin-top: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.product-item img {
-  max-width: 70%;
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+  max-width: 100%;
   height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
-
-.product-item a {
-  display: inline-block;
-  margin-top: 1rem;
-  font-size: 1.1rem;
-  color: #2c3e50;
-  text-decoration: underline;
-}
-
-.product-item a:hover {
-  color: #8e44ad;
-}
-
-.product {
-  margin-bottom: 3rem;
-  text-align: center;
-}
-
-.product img {
-  max-width: 300px;
-  width: 100%;
-  height: auto;
-  border: 1px solid #ccc;
   border-radius: 8px;
   margin-bottom: 1rem;
 }
 
-.contact {
-  margin-top: 3rem;
-  text-align: center;
-  font-size: 1.1rem;
+.product-card p {
+  font-size: 1rem;
+  color: #2c3e50;
 }
 
-.contact a {
-  color: #006699;
+.product-card a {
   text-decoration: underline;
+  color: #2c3e50;
 }
+
+.product-card a:hover {
+  color: #8e44ad;
+}
+
+
 
 .rental-section {
   background-color: #f0f4f8;
@@ -254,4 +259,10 @@ footer {
 
 .rental-contact a:hover {
   text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
