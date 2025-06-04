@@ -1,42 +1,102 @@
 <!DOCTYPE html>
 <html lang="sv">
-   <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Länkar – Jerusalemgården</title>
-      <link rel="stylesheet" href="style.css" />
-      <link rel="stylesheet" href="nav.css" />
-      <link rel="stylesheet" href="expandButton.css" />
-      <link rel="stylesheet" href="mobile.css" />
-   </head>
-   <body>
-      <div class="site-wrapper">
-         <header>
-            <div class="header-inner">
-               <div class="logo">
-                  <h1>Jerusalemgården</h1>
-                  <p>Huset med den blå dörren</p>
-               </div>
-               <nav>
-                  <ul>
-                     <li><a href="index.html">Hem</a></li>
-                     <li><a href="products.html">Produkter</a></li>
-                     <li><a href="jerusalemgarden.html">Jerusalemgården</a></li>
-                     <li><a href="links.html">Länkar</a></li>
-                  </ul>
-               </nav>
-            </div>
-         </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Länkar – Jerusalemgården</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="nav.css" />
+    <link rel="stylesheet" href="expandButton.css" />
+    <link rel="stylesheet" href="mobile.css" />
+    <style>
+      .rental-section {
+        background-color: #f0f4f8;
+        padding: 2rem;
+        border-radius: 12px;
+        margin: 2rem 0;
+        text-align: center;
+      }
 
-         <main>
-            <section class="text-block">
-               <h2>Jerusalemgården</h2>
-            </section>
-         </main>
+      .rental-gallery {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 1rem 0;
+      }
 
-         <footer>
-            <p>&copy; 2025 Jerusalemgården</p>
-         </footer>
-      </div>
-   </body>
+      .rental-gallery img {
+        width: 300px;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        transition: transform 0.3s ease;
+      }
+
+      .rental-gallery img:hover {
+        transform: scale(1.03);
+      }
+
+      .rental-contact a {
+        font-weight: bold;
+        color: #2b4d5f;
+        text-decoration: none;
+      }
+
+      .rental-contact a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="site-wrapper">
+      <header>
+        <div class="header-inner">
+          <div class="logo">
+            <h1>Jerusalemgården</h1>
+            <p>Huset med den blå dörren</p>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="index.html">Hem</a></li>
+              <li><a href="products.html">Produkter</a></li>
+              <li><a href="jerusalemgarden.html">Jerusalemgården</a></li>
+              <li><a href="links.html">Länkar</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <section class="text-block">
+          <h2>Jerusalemgården</h2>
+        </section>
+
+        <!-- 🏠 Uthyrningssektion -->
+        <section class="rental-section">
+          <h2>Bo i Jerusalem</h2>
+          <p>
+            Välkommen att hyra ett unikt rum i hjärtat av Jerusalem! Perfekt för
+            vila, inspiration och stillhet. Kontakta oss för bokning.
+          </p>
+
+          <div class="rental-gallery">
+            <img src="rum.jpg" alt="Rum i Jerusalem" />
+            <img src="utsikt.jpg" alt="Utsikt över Yemin Moshe" />
+          </div>
+
+          <p class="rental-contact">
+            Intresserad?
+            <a href="mailto:guest@jerusalemgarden.org"
+              >guest@jerusalemgarden.org</a
+            >
+          </p>
+        </section>
+      </main>
+
+      <footer>
+        <p>&copy; 2025 Jerusalemgården</p>
+      </footer>
+    </div>
+  </body>
 </html>
