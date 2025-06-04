@@ -175,7 +175,6 @@ footer {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-
 .product-item {
   text-align: center;
   margin-top: 2rem;
@@ -200,3 +199,27 @@ footer {
   color: #8e44ad;
 }
 
+.product {
+        margin-bottom: 3rem;
+        text-align: center;
+      }
+
+      .product img {
+        max-width: 300px;
+        width: 100%;
+        height: auto;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        margin-bottom: 1rem;
+      }
+
+      .contact {
+        margin-top: 3rem;
+        text-align: center;
+        font-size: 1.1rem;
+      }
+
+      .contact a {
+        color: #006699;
+        text-decoration: underline;
+      }
