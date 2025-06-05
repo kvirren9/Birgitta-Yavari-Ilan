@@ -169,7 +169,6 @@ footer {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-
 .product-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -221,8 +220,6 @@ footer {
   color: #8e44ad;
 }
 
-
-
 .rental-section {
   background-color: #f0f4f8;
   padding: 2rem;
@@ -240,7 +237,7 @@ footer {
 }
 
 .rental-gallery img {
-  width: 300px;
+  width: 650px;
   height: auto;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
