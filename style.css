@@ -82,12 +82,6 @@ section {
 }
 
 .highlight {
-  background-color: #e1e7ea;
-  padding: 1rem;
-  border-radius: 8px;
-}
-
-.highlight {
   background-color: #d8e5ec;
   padding: 2rem;
   border-radius: 12px;
@@ -112,6 +106,7 @@ section {
   font-size: 1rem;
   line-height: 1.7;
 }
+
 html,
 body {
   height: 100%;
@@ -149,6 +144,7 @@ footer {
   flex-direction: column;
   justify-content: center;
 }
+
 .prayer p {
   margin: 0 0 1rem 0;
   line-height: 1.6;
@@ -167,14 +163,6 @@ footer {
   object-fit: cover;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 2rem;
-  padding: 2rem 1rem;
-  justify-items: center;
 }
 
 .product-grid {
@@ -229,16 +217,17 @@ footer {
 }
 
 .rental-gallery {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  align-items: center; 
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
   margin: 1rem 0;
 }
 
 .rental-gallery img {
-  max-width: 650px;
+  width: 100%;
   height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease;
@@ -263,5 +252,3 @@ footer {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-
-
